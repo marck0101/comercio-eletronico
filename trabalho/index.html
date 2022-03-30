@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação dados de compra na internet no Brasil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        /* 
+            PROPRIEDADES CSS DAS ABAS 
+            FONTE: https://profdanielbrandao.wordpress.com/2016/01/21/csshtml-criando-abas-de-forma-simples/
+        */
+        .abas {
+            position: relative;
+        }
+
+        .aba {
+            display: inline;
+        }
+
+        .aba a {
+            float: left;
+            padding: 0.5em 2em;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            background-color: #2ecc71;
+            font-family: system-ui;
+            font-weight: bold;
+            color: white;
+        }
+
+        .aba:not(:target) a {
+            border-bottom: 0 none;
+
+        }
+
+        .aba:target a,
+        a:hover {
+            background: #229954;
+        }
+
+
+        .conteudo {
+            position: absolute;
+            left: 0;
+            top: calc(2em + 4px);
+            /* altura do link + bordas */
+            z-index: -2;
+            border: 1px solid #CCC;
+            background-color: white;
+            width: 98%;
+            /* TODO: por algum motivo se deixar height 100% buga */
+            height: 50em;
+            padding-left: 20px;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .aba:target .conteudo {
+            z-index: -1;
+        }
+
+        .imagem {
+            height: 20%;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dados de Compra na Internet no Brasil</h1>
+    <!-- Criando a listagem -->
+    <ul class="abas">
+        <!-- Aqui, criação da primeira aba -->
+        <li class="aba" id="aba-1">
+            <a href="#aba-1">Perigos e Vantagens</a>
+            <section class="conteudo">
+                <h2>Perigos </h2>
+                <p>
+        <li>
+            <ul>Comentários Falsos</ul>
+            <ul>Roubo de dados</ul>
+            <ul> Exposição a malware</ul>
+            <ul>App de extensão de compras falsas</ul>
+            <ul>Ladrões de pacote</ul>
+            <ul>Métodos de pagamementos inseguros</ul>
+        </li>
+        </p>
+        <h2>Vantagens</h2>
+        <p>
+            <li>
+                <ul>Privacidade</ul>
+                <ul>Cupom de desconto</ul>
+                <ul>Preço baixo variedade do produto</ul>
+                <ul>Pesquisa de satisfação </ul>
+                <ul>Enviar pacotes de presentes para qualquer região do mundo</ul>
+            </li>
+        </p>
+        </section>
+        </li>
+        <li class="aba" id="aba-2">
+            <a href="#aba-2">LGPD</a>
+            <section class="conteudo">
+                <h2>LGPD</h2>
+                <p>
+                    A Lei Geral de Proteção de Dados (LGPD) entrou em vigor em setembro de 2021, e desde então muitas
+                    dúvidas sobre ela aparecem entre a população brasileira — em especial, se vazamentos de dados
+                    pessoais podem gerar indenização por danos morais.
+                </p>
+                <h2>Empresas e a quantidade de dados que já foram vazados</h2>
+                <p>
+                    <img src="./img/netflix.jpg" alt="Imagem Netflix" class="imagem">
+                <h4>Netflix, LinkedIn, Last.FM e outros – 1,4 bilhão de senhas vazadas</h4>
+
+                No fim de 2017, foi encontrado um arquivo que reúne mais de 1,4 bilhão de nomes de usuários e senhas
+                de diversos sites, como Netflix, LinkedIn, MySpace, Las.FM, Minecraft e YouPorn.
+
+                O arquivo era organizado por ordem alfabética e frequentemente atualizado pelos hackers. Ele poderia
+                ser facilmente encontrado por meio de plataformas para download de torrents e na dark web (uma parte
+                da deep web onde são compartilhadas informações ilegais).
+
+                Apesar de a Netflix ter negado o vazamento, especialistas que tiveram acesso ao arquivo que
+                compilava as senhas afirmaram que muitas delas estavam corretas.
+
+                <h4>Facebook – 87 milhões de dados vazados</h4>
+
+                Bastante recente, o caso de vazamento de dados no Facebook também foi um dos mais controversos.
+
+                No começo de março, o diretor de tecnologia da principal rede social em operação atualmente divulgou
+                que as informações de 87 milhões de usuários foram violadas. Destes, mais de 443 mil são
+                brasileiros.
+
+                A situação começou a se agravar quando a Cambridge Analytica, empresa responsável por coletar e
+                tratar os dados do Facebook, foi acusada de compartilhar indevidamente as informações para, entre
+                outros crimes, manipular eleitores e influenciar nos resultados eleitorais de 2016, edição na qual
+                Donald Trump foi eleito.
+
+                Mark Zuckerberg foi duramente atacado e prometeu que o Facebook adotaria medidas mais enérgicas para
+                evitar novos vazamentos de dados.
+
+                <h4>Uber – 57 milhões de dados vazados</h4>
+
+                Uma das maiores empresas de mobilidade urbana do planeta sofreu um ciberataque em 2016 e acabou
+                expondo informações de 57 milhões de usuários, inclusive 196 mil clientes brasileiros.
+
+                De acordo com a Comissão Federal de Comércio americana foram vazados endereços de e‑mail, números de
+                celular e dados de carteiras de habilitação dos motoristas. Na época, a Uber negociou com os
+                criminosos para que eles deletassem os dados e se comprometeu a avisar os seus clientes caso
+                vazamentos de dados como esse voltem a acontecer.
+
+                <h4>Adobe – 38 milhões de dados vazados</h4>
+
+                Em 2013, a Adobe, companhia americana de softwares, confirmou o vazamento de informações de seus
+                clientes, incluindo dados bancários. A estimativa é de que 152 milhões de nomes e senhas tenham sido
+                expostos e 2,8 milhões de números de cartões de crédito também. Apesar disso, a empresa só confirmou
+                o vazamento de 38 milhões de dados.
+
+                Para realizar o ataque, os criminosos conseguiram acesso a um servidor antigo da Adobe e o
+                utilizaram para entrar na rede da companhia, recolhendo informações dos clientes e também o
+                código-fonte de alguns de seus programas.
+
+                Vários estados norte-americanos processaram a Adobe por negligenciar a segurança de seus
+                consumidores e o processo só foi finalizado em 2016, quando a empresa concordou em pagar 1 milhão de
+                dólares em multa.
+
+                <h4>Netshoes – 2 milhões de dados vazados</h4>
+
+                A Netshoes, comércio eletrônico de artigos esportivos, também foi vítima de um ataque e dados como
+                números de CPF, e‑mail e data de nascimento de seus clientes foram comprometidos. A empresa garantiu
+                que nenhuma informação bancária foi compartilhada.
+
+                Depois de uma reunião com o Ministério Público do Distrito Federal, a Netshoes se comprometeu a
+                ligar para os mais de 2 milhões de clientes afetados para explicar o que aconteceu e orientá-los.
+
+                É importante lembrar que o vazamento de dados é um perigo iminente para boa parte das empresas e,
+                por isso, é muito importante implementar medidas de segurança que protejam seus dados e contar com o
+                apoio de uma boa consultoria jurídica para garantir que você descubra falhas em sua operação e
+                diminua o risco de isso acontecer com o seu negócio.
+                </p>
+            </section>
+        </li>
+        <li class="aba" id="aba-3">
+            <a href="#aba-3">Protocolos de Segurança</a>
+            <section class="conteudo">
+                <h2>Protocolos de Segurança para não ter dados salvos</h2>
+                <p>
+                    Tenha boas senhas e mude-as de tempos em tempos
+                    Invista na criptografia
+                    <br>
+                    Tenha um plano
+                    <br>
+                    Evitar é importante, mas também é essencial ter um plano caso você venha a sofrer com uma violação
+                    na segurança.
+                    <br>
+                    As diretrizes do GDPR determinam que as empresas devem informar aos clientes o incidente em até 72
+                    horas. Mas, para fazer isso é preciso ter um procedimento muito bem desenhado previamente para
+                    identificar os usuários afetados e notificá-los.
+                </p>
+
+            </section>
+        </li>
+        <li class="aba" id="aba-4">
+            <a href="#aba-4">Aba 4</a>
+            <section class="conteudo">
+                Conteúdo da Aba 4
+            </section>
+        </li>
+        <li class="aba" id="aba-5">
+            <a href="#aba-5">Aba 5</a>
+            <section class="conteudo">
+                Conteúdo da Aba 5
+            </section>
+        </li>
+        <li class="aba" id="aba-6">
+            <a href="#aba-6">Aba 6</a>
+            <section class="conteudo">
+                Conteúdo da Aba 6
+            </section>
+        </li>
+        <li class="aba" id="aba-7">
+            <a href="#aba-7">Aba 7</a>
+            <section class="conteudo">
+                Conteúdo da Aba 7
+            </section>
+        </li>
+        <li class="aba" id="aba-8">
+            <a href="#aba-8">Aba 8</a>
+            <section class="conteudo">
+                Conteúdo da Aba 8
+            </section>
+        </li>
+        <li class="aba" id="aba-9">
+            <a href="#aba-9">Referências</a>
+            <section class="conteudo">
+                https://canaltech.com.br/seguranca/lgpd-vazamento-de-dados-pode-gerar-indenizacao-na-justica-209545/#:~:text=LGPD%7C%20Vazamento%20de%20dados%20pode%20gerar%20indeniza%C3%A7%C3%A3o%20na%20Justi%C3%A7a%3F,-Por%20D%C3%A1cio%20Castelo&text=A%20Lei%20Geral%20de%20Prote%C3%A7%C3%A3o,gerar%20indeniza%C3%A7%C3%A3o%20por%20danos%20morais.
+                <br>
+                https://assisemendes.com.br/vazamento-de-dados-nas-empresas/
+            </section>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>
